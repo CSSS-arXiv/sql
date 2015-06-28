@@ -17,7 +17,6 @@ for line in f:
     title = b[1].split("/")[-1].rstrip('.abs')
     if len(title) < 8:
         title = 'cond-mat/' + title
-    title
     singles = [single(i) for i in b[2:]]
     for i in range(50):
         c.execute("""insert or ignore into doc values""" + \
